@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Recognition Attendance System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Attendance System</h1>
+
+      <div class="input-section">
+        <input id="username" type="text" placeholder="Enter Username" />
+      </div>
+
+      <div class="video-section">
+        <video id="videoFeed" autoplay></video>
+        <canvas id="canvas" class="hidden"></canvas>
+        <!-- Canvas is hidden by default -->
+      </div>
+
+      <div class="button-section">
+        <button id="registerBtn">Register Face</button>
+        <button id="markAttendanceBtn">Mark Attendance</button>
+      </div>
+
+      <div id="result" class="result-message"></div>
+      <div id="errorMessage" class="error-message"></div>
+      <div id="confidenceDisplay" class="confidence-message"></div>
+
+      <div class="attendance-section">
+        <h2>Attendance Records</h2>
+        <ul id="attendanceList"></ul>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
